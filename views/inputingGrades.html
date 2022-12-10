@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>inputing grades</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/javasciort.js"></script>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="sign%20up.html" title="Sign Up"><strong>Sign Up</strong></a></li>
+            <li><a href="login%20page.html" title="Log In"><strong>Log In</strong></a></li>
+            <li><a href="aboutus.html" title="Go to the About Us Page"><strong>About Us</strong></a></li>
+        </ul>
+    </nav>
+    <img class="logo" src="../img/accepted-design-template-48a9e766d62c1a3829317b368fafe817_screen.jpg"
+         alt="accepted!"
+         width="100" height="100"/>
+</header>
+<body>
+<br><br><br><br><br><br><br><br>
+<h1 class="smaller"> fill out your grades and let's see  where you get accepted!</h1>
+<br><br><br>
+<form action="#" method="post">
+    <table id="emptbl">
+        <tr>
+            <th>ציון</th>
+            <th>יחידות</th>
+            <th>מקצוע</th>
+        </tr>
+        <tr>
+            <td id="col0"><label for="savegrade"></label>
+                <input type="number" id="savegrade" name="savegrade" min="0" max="100" placeholder="100.." required/>
+            </td>
+            <td id="col1"><label for="savepoints"></label><input type="number" id="savepoints" name="savepoints"
+                                                                 min="2" max="20"
+                                                                 placeholder="2-15" required/></td>
+            <td id="col2">
+                <label for="savesubjects"></label><select class="subjects" id="savesubjects"
+                                                          name="savesubjects">
+                <option value="Math">מתמטיקה</option>
+                <option value="English">אנגלית</option>
+                <option value="Literature">ספרות</option>
+                <option value="Sport">ספורט</option>
+                <option value="Bible">תנ"ך</option>
+                <option value="Citizenship">אזרחות</option>
+                <option value="Talmud">תלמוד</option>
+                <option value="gramar">הבעה עברית ולשון</option>
+                <option value="history">היסטוריה</option>
+                <option value="additional field">מגמה נוספת</option>
+            </select>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+        <input type="button" value="Remove Row" onclick="deleteRows()"/>
+        <input type="button" value="Add Row" onclick="addRows()"/>
+    <br>
+    <p> One more push and you got it !
+        just fill your psicometric grade and your done
+    </p>
+    <br><br>
+    <table class="psycotable" id="psyco">
+        <tr>
+            <th> ציון רב תחומי</th>
+            <th> ציון בדגש כמותי</th>
+            <th>ציון בדגש מילולי</th>
+        </tr>
+        <tr>
+            <td id="ps0"><label for="psycogeneral"></label>
+                <input type="number" id="psycogeneral" name="psycogeneral"
+                       min="200" max="800"
+                       placeholder="658.." required/>
+            </td>
+            <td id="ps1"><label for="psycomath"></label><input type="number"
+                                                               id="psycomath" name="psycomath"
+                                                               min="200" max="800"
+                                                               placeholder="732.."
+                                                               required/>
+            </td>
+            <td id="ps2"><label for="psycoiteral"></label><input type="number"
+                                                                 id="psycoiteral" name="psycoiteral"
+                                                                 min="200" max="800"
+                                                                 placeholder="456.." required/></td>
+        </tr>
+    </table>
+    <br>
+    <p>
+        <input type="submit" value="save my grades"/>
+    </p>
+</form>
+</body>
+</html>
